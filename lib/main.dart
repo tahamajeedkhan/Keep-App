@@ -81,9 +81,8 @@ class _NotesHomePageState extends State<NotesHomePage> {
     if (_searchQuery.isEmpty) {
       _filteredNotes = List.from(_allNotes);
     } else {
-      _filteredNotes = _allNotes
-          .where((note) => note.contains(_searchQuery))
-          .toList();
+      _filteredNotes =
+          _allNotes.where((note) => note.contains(_searchQuery)).toList();
     }
   }
 
@@ -136,13 +135,15 @@ class _NotesHomePageState extends State<NotesHomePage> {
       // Things to buy note
       NoteModel(
         title: 'Things to buy',
-        content: 'Carry case Fan capacitor Small locks USB Masks box Lighter Detol Extension',
+        content:
+            'Carry case Fan capacitor Small locks USB Masks box Lighter Detol Extension',
         color: Colors.white,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Padding(
-              padding: EdgeInsets.only(left: 16.0, top: 16.0, right: 16.0, bottom: 8.0),
+              padding: EdgeInsets.only(
+                  left: 16.0, top: 16.0, right: 16.0, bottom: 8.0),
               child: Text(
                 'Things to buy',
                 style: TextStyle(
@@ -177,7 +178,8 @@ class _NotesHomePageState extends State<NotesHomePage> {
                   const Text('+ 12 ticked items'),
                   const SizedBox(height: 8),
                   Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                     decoration: BoxDecoration(
                       border: Border.all(color: Colors.grey.shade300),
                       borderRadius: BorderRadius.circular(16),
@@ -193,13 +195,15 @@ class _NotesHomePageState extends State<NotesHomePage> {
       // To Do note
       NoteModel(
         title: 'To Do',
-        content: 'Complete Ruby course Prepare WP final paper Complete Flutter course',
+        content:
+            'Complete Ruby course Prepare WP final paper Complete Flutter course',
         color: const Color(0xFFEED9B9),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Padding(
-              padding: EdgeInsets.only(left: 16.0, top: 16.0, right: 16.0, bottom: 8.0),
+              padding: EdgeInsets.only(
+                  left: 16.0, top: 16.0, right: 16.0, bottom: 8.0),
               child: Text(
                 'To Do',
                 style: TextStyle(
@@ -215,8 +219,10 @@ class _NotesHomePageState extends State<NotesHomePage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: const [
                     InteractiveCheckboxListItem(label: 'Complete Ruby course'),
-                    InteractiveCheckboxListItem(label: 'Prepare WP final paper'),
-                    InteractiveCheckboxListItem(label: 'Complete Flutter course'),
+                    InteractiveCheckboxListItem(
+                        label: 'Prepare WP final paper'),
+                    InteractiveCheckboxListItem(
+                        label: 'Complete Flutter course'),
                   ],
                 ),
               ),
@@ -236,7 +242,10 @@ class _NotesHomePageState extends State<NotesHomePage> {
                           color: Colors.grey.shade700,
                           borderRadius: BorderRadius.circular(4),
                         ),
-                        child: const Icon(Icons.attach_file, color: Colors.white, size: 16),
+                        child: const Icon(Icons.attach_file,
+                            color: Colors.white, size: 16),
+                        // child: Image.asset('assets/fist 2.jpeg',
+                        //width: 16, height: 16),
                       ),
                       const SizedBox(width: 8),
                       const CircleAvatar(
@@ -254,13 +263,15 @@ class _NotesHomePageState extends State<NotesHomePage> {
       // Before offer questionnaire note
       NoteModel(
         title: 'Before offer questionnaire',
-        content: 'What are your timings? Leaves: annual? casual? sick? Increments policy? Salary disbursement',
+        content:
+            'What are your timings? Leaves: annual? casual? sick? Increments policy? Salary disbursement',
         color: const Color(0xFFF8D7E7),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: const [
             Padding(
-              padding: EdgeInsets.only(left: 16.0, top: 16.0, right: 16.0, bottom: 8.0),
+              padding: EdgeInsets.only(
+                  left: 16.0, top: 16.0, right: 16.0, bottom: 8.0),
               child: Text(
                 'Before offer questionnaire',
                 style: TextStyle(
@@ -289,13 +300,15 @@ class _NotesHomePageState extends State<NotesHomePage> {
       // Big Wolf note
       NoteModel(
         title: 'Big Wolf',
-        content: 'itnext.io dart flutter Things to remember Enlarge animation is revision CodeMagic Script',
+        content:
+            'itnext.io dart flutter Things to remember Enlarge animation is revision CodeMagic Script',
         color: const Color(0xFFDCF8A4),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: const [
             Padding(
-              padding: EdgeInsets.only(left: 16.0, top: 16.0, right: 16.0, bottom: 8.0),
+              padding: EdgeInsets.only(
+                  left: 16.0, top: 16.0, right: 16.0, bottom: 8.0),
               child: Text(
                 'Big Wolf',
                 style: TextStyle(
@@ -309,11 +322,13 @@ class _NotesHomePageState extends State<NotesHomePage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('https://itnext.io/dart-before-you-flutter-part-1-71b40e499880',
+                  Text(
+                      'https://itnext.io/dart-before-you-flutter-part-1-71b40e499880',
                       style: TextStyle(color: Colors.green)),
                   SizedBox(height: 16),
                   Text('Things to rememeber'),
-                  Text('Enlarge animation is revision Jan 24, 4:50 PM of Brighten.flr'),
+                  Text(
+                      'Enlarge animation is revision Jan 24, 4:50 PM of Brighten.flr'),
                   SizedBox(height: 16),
                   Text('CodeMagic Script...'),
                 ],
@@ -331,7 +346,8 @@ class _NotesHomePageState extends State<NotesHomePage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: const [
             Padding(
-              padding: EdgeInsets.only(left: 16.0, top: 16.0, right: 16.0, bottom: 8.0),
+              padding: EdgeInsets.only(
+                  left: 16.0, top: 16.0, right: 16.0, bottom: 8.0),
               child: Text(
                 'Car maintenance',
                 style: TextStyle(
@@ -395,7 +411,8 @@ class _NotesHomePageState extends State<NotesHomePage> {
                               },
                             )
                           : Container(
-                              padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 8.0),
                               child: const Text(
                                 'Search your notes',
                                 style: TextStyle(
@@ -417,9 +434,9 @@ class _NotesHomePageState extends State<NotesHomePage> {
                 ],
               ),
             ),
-            
+
             // Pinned section
-            if (_searchQuery.isEmpty) 
+            if (_searchQuery.isEmpty)
               const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
                 child: Align(
@@ -433,11 +450,12 @@ class _NotesHomePageState extends State<NotesHomePage> {
                   ),
                 ),
               ),
-            
+
             // Show search results label when searching
             if (_searchQuery.isNotEmpty)
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
                 child: Align(
                   alignment: Alignment.centerLeft,
                   child: Text(
@@ -449,7 +467,7 @@ class _NotesHomePageState extends State<NotesHomePage> {
                   ),
                 ),
               ),
-            
+
             // Grid of notes
             Expanded(
               child: Padding(
@@ -465,7 +483,8 @@ class _NotesHomePageState extends State<NotesHomePage> {
                         ),
                       )
                     : GridView.builder(
-                        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                        gridDelegate:
+                            const SliverGridDelegateWithFixedCrossAxisCount(
                           crossAxisCount: 2,
                           childAspectRatio: 1.0,
                           mainAxisSpacing: 10,
@@ -481,7 +500,7 @@ class _NotesHomePageState extends State<NotesHomePage> {
                       ),
               ),
             ),
-            
+
             // Bottom navigation
             Container(
               decoration: BoxDecoration(
@@ -555,10 +574,12 @@ class InteractiveCheckboxListItem extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _InteractiveCheckboxListItemState createState() => _InteractiveCheckboxListItemState();
+  _InteractiveCheckboxListItemState createState() =>
+      _InteractiveCheckboxListItemState();
 }
 
-class _InteractiveCheckboxListItemState extends State<InteractiveCheckboxListItem> {
+class _InteractiveCheckboxListItemState
+    extends State<InteractiveCheckboxListItem> {
   bool isChecked = false;
 
   @override
